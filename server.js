@@ -1,3 +1,4 @@
+import express from "express";
 import { createApp } from "./backend/server.js";
 
-export default createApp();
+export default createApp({ expressFactory: express });

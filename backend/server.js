@@ -7,8 +7,8 @@ import { buildPrompt } from "./prompt.js";
 import { extractJson, validateResult } from "./validation.js";
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const MAX_CHARS = 12000;
-export function createApp({ generate } = {}) {
-  const app = express();
+export function createApp({ generate, expressFactory = express } = {}) {
+  const app = expressFactory();
   app.use(express.json({ limit: "100kb" }));
   app.get("/api/health", (_req, res) => res.json({ status: "ok" }));
   app.post("/api/corrigir", async (req, res) => {
