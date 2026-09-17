@@ -45,7 +45,7 @@ export function createApp({ generate, expressFactory = express } = {}) {
             });
         const client = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
         const response = await client.models.generateContent({
-          model: process.env.GEMINI_MODEL || "gemini-flash-latest",
+          model: process.env.GEMINI_MODEL || "gemini-2.5-flash",
           contents: buildPrompt(tema, redacao),
           config: { responseMimeType: "application/json", temperature: 0.2 },
         });

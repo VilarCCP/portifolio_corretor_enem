@@ -10,7 +10,7 @@ MVP local para correção pedagógica de redações no padrão ENEM usando a API
 4. Inicie: `npm run dev`.
 5. Acesse `http://localhost:3000`.
 
-Para obter uma chave, use o Google AI Studio. O modelo padrão é `gemini-flash-latest`; altere `GEMINI_MODEL` no `.env` se necessário.
+Para obter uma chave, use o Google AI Studio. O modelo padrão é `gemini-2.5-flash`; altere `GEMINI_MODEL` no `.env` se necessário.
 
 ## Estrutura
 
