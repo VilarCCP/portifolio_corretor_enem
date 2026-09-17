@@ -1,0 +1,8 @@
+{
+  "name": "redacao-ia",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": { "dev": "node --watch backend/server.js", "start": "node backend/server.js", "test": "node --test --test-isolation=none" },
+  "dependencies": { "@google/genai": "^2.23.0", "dotenv": "^17.4.2", "express": "^5.2.1" }
+}
